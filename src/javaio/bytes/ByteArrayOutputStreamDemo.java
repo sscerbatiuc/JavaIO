@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package javaio.file;
+package javaio.bytes;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -17,8 +12,8 @@ import java.io.IOException;
 public class ByteArrayOutputStreamDemo {
 
     public static void main(String[] args) throws IOException {
-        File newTextFile = new File("C:\\Users\\sscerbatiuc.INTHER\\Desktop\\Tekwill homework\\newTest.txt");
-        File newTextFileCopy = new File("C:\\Users\\sscerbatiuc.INTHER\\Desktop\\Tekwill homework\\newTestCopy.txt");
+        File newTextFile = new File("C:\\Users\\sscerbatiuc.INTHER\\Desktop\\Step.txt");
+        File newTextFileCopy = new File("C:\\Users\\sscerbatiuc.INTHER\\Desktop\\StepCopy.txt");
         if (newTextFile.createNewFile()) {
             System.out.println("File created");
         } else {
@@ -34,7 +29,5 @@ public class ByteArrayOutputStreamDemo {
 
         bout.flush();
         bout.close();//has no effect    
-        System.out.println("Success...");
-
     }
 }
