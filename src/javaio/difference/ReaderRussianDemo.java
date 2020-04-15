@@ -17,7 +17,7 @@ public class ReaderRussianDemo {
         int index = 0;
         while ((data = reader.read()) != -1) {
             chars[index++] = String.valueOf((char) data);
-            System.out.println(chars[index - 1]);
+            System.out.print(chars[index - 1]);
         }
         System.out.println();
         reader.close();

@@ -20,7 +20,7 @@ public class FileInputStreamRussianIntoArray {
         // Reading all the characters:
         for(int i = 0; (intChar = inStream.read()) != -1; i++){
             array[i] = String.valueOf((char)intChar);
-            System.out.println(array[i]);
+            System.out.print(array[i]);
         }
         
         System.out.println(array);

@@ -70,11 +70,8 @@ public class XmlIOService {
             employedDate.appendChild(doc.createTextNode(emp.getEmployeedOn().toString()));
             employee.appendChild(employedDate);
         }
-        doc.getDocumentElement().normalize();
-
         // Writing to a file
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(doc);
         StreamResult destination = new StreamResult(new File("D:\\employee.xml"));

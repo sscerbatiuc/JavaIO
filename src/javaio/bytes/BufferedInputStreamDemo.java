@@ -25,7 +25,7 @@ public class BufferedInputStreamDemo {
         while ((character = bin.read()) != -1) {
             System.out.print((char) character);
         }
-        System.out.println((char)bin.read());
+        System.out.println();
         bin.close();
         inStream.close();
 
