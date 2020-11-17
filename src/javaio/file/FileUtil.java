@@ -13,6 +13,8 @@ public class FileUtil {
     private final static String absolutePath = "C:\\Users\\sscerbatiuc.INTHER\\Desktop\\Step.txt";
 
     public static File createTextFileAbsolute() throws IOException {
+        File file = new File("C:\\Temp\\EmployeeManager\\test.csv");
+
         System.out.println("---- Creating file with absolute location ----");
 
         File newTextFile = new File(absolutePath);

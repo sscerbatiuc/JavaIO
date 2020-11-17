@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class Employee implements Serializable {
 
-    public static final long serialVersionUID = 123L;
+    public static final long serialVersionUID = 1L;
     
     String name, surname;
     LocalDate employeedOn;
